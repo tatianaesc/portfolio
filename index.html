@@ -13,6 +13,11 @@
     height: 200px;
     background: white;
   }
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
   </style>
 </head>
 <body>
@@ -80,10 +85,41 @@
     <div class="col-sm-8">
       <h2>Minibio</h2>
       <p>Sou Doutora, Mestre e Bacharel em Informática pela PUC-Rio e tenho experiência na área de Ciência da Computação, com ênfase em Engenharia de Software e Ciência de Dados, atuando principalmente nos seguintes temas: Desenvolvimento de Sistemas, Machine Learning, Business Intelligence e Sistemas Colaborativos. Sou Analista de Sistemas e Coordenadora da Petrobras e Professora e Coordenadora de cursos de pós-graduação Lato Sensu da PUC-Rio: Análise e Projeto de Sistemas / Ciência de Dados. Com múltiplos interesses, sou apaixonada por ensinar, aprender e resolver problemas com soluções criativas. Nas horas vagas, sou bailarina, apaixonada por viagens, cachorros e séries, e penso em maneiras de mudar o mundo.</p>
-      <div class="fakeimg"><img src="Palestra Tatiana Jornada Java.jpg"/></div>
-      <div class="fakeimg"><img src="Palestra Tatiana Jornada Python.jpg"/></div>
-      <div class="fakeimg"><img src="TIComCafe.jpeg"/></div>
-      <div class="fakeimg"><img src="JornadaCast.JPG"/></div>
+      
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Palestra Tatiana Jornada Java.jpg" alt="Los Angeles" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="Palestra Tatiana Jornada Python.jpg" alt="Chicago" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="TIComCafe.jpeg" alt="New York" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="JornadaCast.JPG" alt="New York" width="1100" height="500">
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
     </div>
   </div>
 </div>
